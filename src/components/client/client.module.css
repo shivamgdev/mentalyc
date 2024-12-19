@@ -1,0 +1,424 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.container{
+    padding-inline: 18px;
+    padding-bottom: 16px;
+    width: 100%;
+}
+
+.mainContent{
+    max-width: 1380px;
+    margin-top: 30px;
+    margin-inline: auto;
+}
+
+.HelpBox{
+    display: flex;
+    justify-content: end;
+}
+
+.HelpBox a{
+    display: flex;
+    gap: 8px;
+    text-decoration: none;
+    color: #731054;
+}
+
+/* Main Client State */
+
+.clientBox{
+    margin-top: 18px;
+}
+
+.ClientTypeBTN{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-block: 3px;
+    padding-inline: 4px;
+    margin-top: 18px;
+}   
+
+.ClientTypeBTN button{
+    color: #8F8F8F;
+    margin: 1px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.isActive{
+    color: black !important;
+    padding-block: 6px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px 2px rgb(220, 220, 220);
+}
+
+/* top section */
+
+.FindClients{
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.leftSides{
+    display: flex;
+    gap: 12px;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox label{
+    font-size: 15px;
+}
+
+.inputBox input{
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    height: 36px;
+    padding-inline: 12px;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+.inputBox input::placeholder{
+    color: #8F8F8F;
+}
+
+.line{
+    flex: 1;
+    margin-top: 22px;
+    border: 1px solid #E0E0E0;
+}
+
+.deactiveButton{
+    margin-top: 22px;
+    display: flex;
+    color: #731054;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.addButton{
+    margin-top: 22px;
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 1px solid #731054;
+    color: #731054;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.clientListBox{
+    overflow: auto;
+    background-color: white;
+    border-radius: 6px;
+    max-height: 300px;
+    margin-top: 28px;
+}
+
+.TabelBox{
+    width: 100%;
+    border-spacing : 0;
+}
+
+.differentType{
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.individualType{
+    background-color: #EFEAFD;
+}
+
+.coupleType{
+    background-color: #E2F3FC;
+}
+
+.familyType{
+    background-color: #FFEAD5;
+}
+
+.childType{
+    background-color: #D5F6DE;
+}
+
+.groupType{
+    background-color: #FDF4C8;
+}
+
+
+table td:first-child, table th:first-child {
+    padding-left: 20px; 
+}
+
+tr:hover{
+    background-color: #D6E4F4;
+}
+
+input[type=checkbox] {
+    accent-color: #731054;  
+    width: 20px;
+    height: 20px;   
+}
+
+.TabelBox thead th{
+    padding-block: 12px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    text-align: start;
+    /* min-width: 120px; */
+}
+
+.TabelBox td{
+    text-align: start;
+    padding-block: 12px;
+    /* width: 240px; */
+}
+
+.selected{
+    background-color: #D6E4F4;
+}
+
+.emptyTableText{
+    margin-top: 38px;
+    text-align: center;
+}
+
+.buttonBox{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Form */
+
+.formContainer{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(127, 127, 127, 0.5);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 12px;
+}
+
+.formBox{
+    position: relative;
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px 18px;
+    max-width: 500px;
+}
+
+.closeBox{
+    position: absolute;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.clientBox img{
+    height: 100%;
+    width: 100%;
+}
+
+.headerForm{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.headerForm p{
+    color: #8F8F8F;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.PrimaryfieldBox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+}
+
+.radioFieldBox{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+/* .formBox form{
+    margin-top: 20px;
+} */
+
+.formBox label{
+    font-size: 14px;
+}
+
+.radioFieldBox label{
+    margin-left: -6px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.radioFieldBox2{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 18px;
+    margin-top: 12px;
+}
+
+.radioFieldBox2 label{
+    margin-left: -6px;
+    border-radius: 4px;
+}
+
+.radioFieldBox label:nth-of-type(1) {
+    background-color: #EFEAFD;
+}
+
+.radioFieldBox label:nth-of-type(2) {
+    background-color: #E2F3FC;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 16px;
+    height: 16px;
+    accent-color: #731054;
+}
+
+.PrimaryfieldBox input[type=text]{
+    height: 30px;
+    margin-top: 8px;
+    border: 1px solid #cccccc;
+    outline: none;
+    padding-inline: 6px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.PrimaryfieldBox input[type=number]{
+    height: 30px;
+    margin-top: 8px;
+    border: 1px solid #cccccc;
+    outline: none;
+    padding-inline: 6px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.start{
+    color: red;
+}
+
+.PrimaryfieldBox select{
+    height: 30px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.PrimaryfieldBox select:focus{
+    border: 2px solid #731054;
+}
+
+input[type=text]:focus {
+    border: 2px solid #731054;
+}
+
+input[type=number]:focus {
+    border: 2px solid #731054;
+}
+
+.clientRiskBox{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.clientRiskBox label{
+    font-size: 15px;
+}
+
+.clientRiskBox input[type=radio] {
+    border: 0px;
+    width: 18px;
+    height: 18px;
+    accent-color: #731054;
+}
+
+.addClientFormButton{
+    margin-top: 18px;
+    display: flex;
+    justify-content: end;
+}
+
+.addClientFormButton button{
+    padding: 8px 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: #731054;
+    color: white;
+    cursor: pointer;
+}
+
+.addClientFormButton button:hover{
+    background-color: #b93c92;
+}
+
+@media(max-width: 800px){
+    table td:first-child, table th:first-child {
+        padding-right: 20px; 
+    }
+
+    .TabelBox thead th:not(:first-child){
+        min-width: 150px;
+    }
+
+    .FindClients{
+        flex-direction: column;
+        gap: 12px;
+        align-items: end;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .leftSides{
+        width: 100%;
+    }
+
+    .inputBox{
+        flex: 1;
+    }
+}
